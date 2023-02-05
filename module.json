@@ -1,0 +1,26 @@
+{
+  "id": "fvtt-pf2e-pfsorgplay-training",
+  "title": "Pathfinder Society Training",
+  "description": "Module for adding details to the character sheet for their elected Pathfinder Training, which confers bonus Lore and per-mission consumables.",
+  "authors": [
+    {
+      "name": "TJourney"
+    },
+    {
+      "name":"Special Thanks: Lucas Servideo & Paizo Publishing"
+    }
+  ],
+  "version": "0.0.1",
+  "relationships": {
+    "systems": [
+      {
+        "id": "pf2e",
+        "type": "system"
+      }
+    ]
+  },
+  "compatibility": {
+    "minimum": "10",
+    "verified": "10"
+  }
+}
