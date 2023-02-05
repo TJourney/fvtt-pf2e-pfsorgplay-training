@@ -10,6 +10,7 @@
       "name":"Special Thanks: Lucas Servideo & Paizo Publishing"
     }
   ],
+  "url": "https://github.com/TJourney/fvtt-pf2e-pfsorgplay-training",
   "version": "0.0.1",
   "relationships": {
     "systems": [
@@ -19,6 +20,13 @@
       }
     ]
   },
+  "language": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
   "compatibility": {
     "minimum": "10",
     "verified": "10"
