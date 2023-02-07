@@ -1,5 +1,5 @@
 {
-  "id": "fvtt-pf2e-pfsorgplay-training",
+  "id": "pf2e-pfsorgplay-training",
   "title": "Pathfinder Society Training",
   "description": "Module for adding details to the character sheet for their elected Pathfinder Training, which confers bonus Lore and per-mission consumables.",
   "authors": [
@@ -12,7 +12,7 @@
       "name":"Special Thanks: Lucas Servideo & Paizo Publishing"
     }
   ],
-  "url": "https://github.com/TJourney/fvtt-pf2e-pfsorgplay-training",
+  "url": "https://github.com/TJourney/pf2e-pfsorgplay-training",
   "version": "0.0.1",
   "relationships": {
     "systems": [
@@ -36,6 +36,6 @@
   "esmodules": [
     "module/pfs-training.js"
   ],
-  "manifest": "https://github.com/TJourney/fvtt-pf2e-pfsorgplay-training/releases/download/wip/module.json",
-  "download": "https://github.com/TJourney/fvtt-pf2e-pfsorgplay-training/releases/download/wip/module.zip"
+  "manifest": "https://github.com/TJourney/pf2e-pfsorgplay-training/releases/download/wip/module.json",
+  "download": "https://github.com/TJourney/pf2e-pfsorgplay-training/releases/download/wip/module.zip"
 }
