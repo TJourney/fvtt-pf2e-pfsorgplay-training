@@ -1,1 +1,1 @@
-# pf2e-pfsorgplay-training
+# pfsorgplay-training
