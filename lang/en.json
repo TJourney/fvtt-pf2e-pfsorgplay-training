@@ -1,29 +1,44 @@
 {
-  "pfsorgplay-training": {
-    "specialties": {
-      "default": {
-        "name": "Undeclared",
-        "hint": "You may pick an option other than Field Commission at any point in your Pathfinder Career. By default with no selection, you gain Pathfinder Lore and a leveled Healing Potion."
-      },
-      "spells": {
-        "name": "School of Spells",
-        "hint": "Followers of the School of Spells pursue magic as much as any fame or material reward, and are provided a selection of magic scrolls with each mission."
-      },
-      "scrolls": {
-        "name": "School of Scrolls",
-        "hint": "The School of Scrolls values knowledge above all else, before each mission the School provides its adherants a selection of magical and mundane consumables."
-      },
-      "swords": {
-        "name": "School of Swords",
-        "hint": "The School of Swords works to ensure a strong martial protection for the Society's scholarly pursuits, its members prepare from a selection of consumables which counter and defend against special threats."
-      },
-      "generalist": {
-        "name": "Generalist",
-        "hint": "Well-rounded in their preparations, Generalists have access to more potent healing potions than specialists in addition to a wide variety of alchemical goods."
-      },
-      "fieldcomission": {
-        "name": "Field Comission",
-        "hint": "Only selectable at character creation, a Field Comission eschews the per-mission consumables in exchange for three days of additional downtime."
+  "display" : {
+    "selection":{
+      "label": "Pathfinder Training",
+      "dropdown": {
+        "options": {
+          "default": {
+            "name": "Undeclared",
+            "hint": "You may pick an option other than Field Commission at any point in your Pathfinder Career. By default with no selection, you gain Pathfinder Lore and a leveled Healing Potion."
+          },
+          "spells": {
+            "name": "School of Spells",
+            "hint": "Followers of the School of Spells pursue magic as much as any fame or material reward, and are provided a selection of magic scrolls with each mission."
+          },
+          "scrolls": {
+            "name": "School of Scrolls",
+            "hint": "The School of Scrolls values knowledge above all else, before each mission the School provides its adherants a selection of magical and mundane consumables."
+          },
+          "swords": {
+            "name": "School of Swords",
+            "hint": "The School of Swords works to ensure a strong martial protection for the Society's scholarly pursuits, its members prepare from a selection of consumables which counter and defend against special threats."
+          },
+          "generalist": {
+            "name": "Generalist",
+            "hint": "Well-rounded in their preparations, Generalists have access to more potent healing potions than specialists in addition to a wide variety of alchemical goods."
+          },
+          "fieldcomission": {
+            "name": "Field Comission",
+            "hint": "Only selectable at character creation, a Field Comission eschews the per-mission consumables in exchange for three days of additional downtime."
+          }
+        }
+      }
+    }
+  },
+  "logging": {
+    "prefix": "PFS Training",
+    "delimiter": " | ",
+    "messages": {
+      "hook": {
+        "init": "Initializing pfsorgplay-training",
+        "renderActorSheet": "ActorSheet Render Hook"
       }
     }
   }
