@@ -11,16 +11,20 @@ function log(message) {
 Hooks.once(
   "init",
   async () => {
-    console.log('PFS Training | Initializing fvtt-pf2e-pforgplay-training');
-    log("pfsorgplay-training.logging.messages.hook.init");
+    console.log('DEBUG: init pf2e-pforgplay-training');
+});
+
+// Localization Init Hook
+Hooks.once(
+  "i18nInit",
+  async () => {
+    log("pfsorgplay-training.logging.message.hook.i18nInit");
 });
 
 // renderActorSheet Hook
 Hooks.on(
   "renderActorSheet",
   (sheet, html) => {
-    console.log("PFS Training | ActorSheet Render Hook");
     log("pfsorgplay-training.logging.messages.hook.renderActorSheet");
-    let $trainingSelection = renderTrainingSelection();
-    html.find('.level-bump').after($trainingSelection);
+    html.find('.level-bump').after(renderTrainingSelection());
 });

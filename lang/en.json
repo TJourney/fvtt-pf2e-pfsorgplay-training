@@ -38,7 +38,7 @@
       "delimiter": " | ",
       "messages": {
         "hook": {
-          "init": "Initializing pfsorgplay-training",
+          "i18nInit": "Localization initialized",
           "renderActorSheet": "ActorSheet Render Hook"
         }
       }
