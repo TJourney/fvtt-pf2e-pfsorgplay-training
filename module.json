@@ -34,7 +34,7 @@
     "verified": "10"
   },
   "esmodules": [
-    "module/pfs-training.js"
+    "scripts/pfs-training.js"
   ],
   "manifest": "https://github.com/TJourney/pfsorgplay-training/releases/download/wip/module.json",
   "download": "https://github.com/TJourney/pfsorgplay-training/releases/download/wip/module.zip"
