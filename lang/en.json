@@ -39,7 +39,13 @@
       "messages": {
         "hook": {
           "i18nInit": "Localization initialized",
-          "renderActorSheet": "ActorSheet Render Hook"
+          "renderActorSheet": {
+            "init": "ActorSheet Render Hook",
+            "prepareInjection": "Preparing Template for Injection",
+            "findTarget": "Locating Injection Target",
+            "inject": "Performing Injection",
+            "complete": "ActorSheet Render Hook Complete"
+          }
         }
       }
     }

@@ -1,3 +1,5 @@
+import { registerTemplates } from "./register-templates.js";
+
 // early function for rendering the Training Selection
 function renderTrainingSelection() {
   return '<section class="school"><label class="details-label">' + game.i18n.localize("pfsorgplay-training.display.selection.label") + '</label></section>';
@@ -12,6 +14,7 @@ Hooks.once(
   "init",
   async () => {
     console.log('DEBUG: init pf2e-pforgplay-training');
+    registerTemplates();
 });
 
 // Localization Init Hook
@@ -25,6 +28,17 @@ Hooks.once(
 Hooks.on(
   "renderActorSheet",
   (sheet, html) => {
-    log("pfsorgplay-training.logging.messages.hook.renderActorSheet");
-    html.find('.level-bump').after(renderTrainingSelection());
+    log("pfsorgplay-training.logging.messages.hook.renderActorSheet.init");
+
+    log("pfsorgplay-training.logging.messages.hook.renderActorSheet.prepareInjection");
+    const selectionTemplatePath = '/modules/pfsorgplay-training/templates/selection.hbs');
+    const selectionInjection    = await renderTemplate(selectionTemplatePath);
+
+    log("pfsorgplay-training.logging.messages.hook.renderActorSheet.findTarget");
+    const selectionInjectTarget = $(html).find('.level-bump');
+
+    log("pfsorgplay-training.logging.messages.hook.renderActorSheet.inject");
+    selectionInjectTarget.after(selectionInjection);
+
+    log("pfsorgplay-training.logging.messages.hook.renderActorSheet.complete");
 });
