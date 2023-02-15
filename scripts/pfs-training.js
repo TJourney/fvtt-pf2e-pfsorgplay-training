@@ -15,14 +15,39 @@ Hooks.once(
   async () => {
     console.log('DEBUG: init pf2e-pforgplay-training');
     registerTemplates();
-});
+  }
+);
 
 // Localization Init Hook
 Hooks.once(
   "i18nInit",
   async () => {
     log("pfsorgplay-training.logging.message.hook.i18nInit");
-});
+
+    // register settings
+    // training selection dropdown
+    game.settings.register('pfsorgplay-training', 'trainingSelection', {
+      name: game.i18n.localize("pfsorgplay-training.display.selection.label"),
+      hint: "write something for here",
+      scope: "world",
+      config: true,
+      type: String,
+      choices: {
+        "UN": "pfsorgplay-training.display.selection.dropdown.options.default.name",
+        "SP": "pfsorgplay-training.display.selection.dropdown.options.spells.name",
+        "SC": "pfsorgplay-training.display.selection.dropdown.options.scrolls.name",
+        "SW": "pfsorgplay-training.display.selection.dropdown.options.swords.name",
+        "GE": "pfsorgplay-training.display.selection.dropdown.options.generalist.name",
+        "FC": "pfsorgplay-training.display.selection.dropdown.options.fieldcomission.name"
+      },
+      default: "UN"
+    });
+
+  // end Localization Init
+  }
+);
+
+
 
 // renderActorSheet Hook
 Hooks.on(
@@ -41,4 +66,5 @@ Hooks.on(
     selectionInjectTarget.after(selectionInjection);
 
     log("pfsorgplay-training.logging.messages.hook.renderActorSheet.complete");
-});
+  }
+);
